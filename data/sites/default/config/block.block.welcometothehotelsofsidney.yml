@@ -1,0 +1,31 @@
+uuid: 0d481320-9c83-4cbf-9fc3-a461ee341f7c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f74f2e7-63ef-4a54-b317-6276054c0a06'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: welcometothehotelsofsidney
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:3f74f2e7-63ef-4a54-b317-6276054c0a06'
+settings:
+  id: 'block_content:3f74f2e7-63ef-4a54-b317-6276054c0a06'
+  label: 'Welcome to the hotels of Sidney '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

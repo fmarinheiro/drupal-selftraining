@@ -1,0 +1,23 @@
+uuid: a1fd432d-d632-4f6c-addd-acdb0cd546b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_website
+    - node.type.hotels
+  module:
+    - link
+id: node.hotels.field_hotel_website
+field_name: field_hotel_website
+entity_type: node
+bundle: hotels
+label: 'Hotel Website'
+description: 'Make sure linke go to the hotel''s homepage'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

@@ -1,0 +1,38 @@
+uuid: a523639b-038e-4dcb-a09c-9893dda47c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_picture
+    - node.type.hotels
+  module:
+    - image
+id: node.hotels.field_hotel_picture
+field_name: field_hotel_picture
+entity_type: node
+bundle: hotels
+label: 'Hotel Picture'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: hotels
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '500 KB'
+  max_resolution: ''
+  min_resolution: 500x500
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

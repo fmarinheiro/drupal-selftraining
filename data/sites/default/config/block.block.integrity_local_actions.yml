@@ -1,0 +1,20 @@
+uuid: d6d8eff0-893d-4073-a1e7-6e613f87a906
+langcode: en
+status: true
+dependencies:
+  theme:
+    - integrity
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: integrity_local_actions
+theme: integrity
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

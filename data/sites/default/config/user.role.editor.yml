@@ -1,0 +1,26 @@
+uuid: 45aa4b1b-dc13-46a0-a55a-eaca56423a85
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'administer comment types'
+  - 'administer nodes'
+  - 'create article content'
+  - 'create hotels content'
+  - 'create page content'
+  - 'edit any article content'
+  - 'edit any hotels content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own hotels content'
+  - 'edit own page content'
+  - 'post comments'
+  - 'revert article revisions'
+  - 'skip comment approval'

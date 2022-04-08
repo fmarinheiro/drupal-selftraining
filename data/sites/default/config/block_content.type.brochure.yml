@@ -1,0 +1,8 @@
+uuid: 27c4f91a-14e7-4093-bbe2-b1d687311dcb
+langcode: en
+status: true
+dependencies: {  }
+id: brochure
+label: Brochure
+revision: 0
+description: 'A hotel marketing block for marketing activities'

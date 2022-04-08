@@ -1,0 +1,19 @@
+uuid: 60ea1f18-b6b5-4652-b549-cb00531b2f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_email
+id: comment.comment.field_email
+field_name: field_email
+entity_type: comment
+bundle: comment
+label: Email
+description: 'Please enter your email address '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

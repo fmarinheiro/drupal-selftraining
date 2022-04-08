@@ -1,0 +1,8 @@
+uuid: 816556ec-bb00-4c62-92de-22a691865d2b
+langcode: en
+status: true
+dependencies: {  }
+name: Landmarks
+vid: landmarks
+description: 'These are the landmarks for each hotel'
+weight: 0

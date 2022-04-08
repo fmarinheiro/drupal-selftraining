@@ -1,0 +1,32 @@
+uuid: aa3e3389-708b-4158-bb95-793290d12658
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brochure
+    - field.field.block_content.brochure.body
+    - field.field.block_content.brochure.field_hotel_brochure
+  module:
+    - file
+    - text
+id: block_content.brochure.default
+targetEntityType: block_content
+bundle: brochure
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hotel_brochure:
+    weight: 1
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

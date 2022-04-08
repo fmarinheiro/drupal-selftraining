@@ -1,0 +1,159 @@
+uuid: 42e855fa-0605-4657-8f2a-e0a5e74b0a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.hotels.body
+    - field.field.node.hotels.field_hotel_phone
+    - field.field.node.hotels.field_hotel_picture
+    - field.field.node.hotels.field_hotel_video
+    - field.field.node.hotels.field_hotel_website
+    - field.field.node.hotels.field_landmarks
+    - field.field.node.hotels.field_map_to_hotel
+    - field.field.node.hotels.field_slides
+    - image.style.large
+    - node.type.hotels
+  module:
+    - ds
+    - image
+    - link
+    - simple_gmap
+    - telephone
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - node_author
+      left:
+        - field_hotel_website
+        - field_hotel_phone
+        - field_landmarks
+      right:
+        - field_hotel_picture
+        - field_map_to_hotel
+      footer:
+        - body
+        - field_hotel_video
+        - links
+        - node_changed_date
+    fields:
+      node_author:
+        plugin_id: node_author
+        weight: 0
+        label: hidden
+        formatter: author
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 9
+        label: hidden
+        formatter: ds_post_date_short
+id: node.hotels.full
+targetEntityType: node
+bundle: hotels
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: footer
+  field_hotel_phone:
+    weight: 2
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: left
+  field_hotel_picture:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: right
+  field_hotel_video:
+    weight: 7
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: footer
+  field_hotel_website:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: left
+  field_landmarks:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: left
+  field_map_to_hotel:
+    weight: 5
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: '300'
+      iframe_height: '300'
+      iframe_title: ''
+      static_scale: 1
+      include_link: true
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: right
+  links:
+    weight: 8
+    region: footer
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_slides: true

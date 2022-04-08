@@ -1,0 +1,36 @@
+uuid: 2902e4a6-26c0-4120-a37d-4369959b196c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_interests
+field_name: field_interests
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: First
+    -
+      value: '1'
+      label: Second
+    -
+      value: '2'
+      label: Third
+    -
+      value: '4'
+      label: Fourth
+    -
+      value: '5'
+      label: Fifth
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
