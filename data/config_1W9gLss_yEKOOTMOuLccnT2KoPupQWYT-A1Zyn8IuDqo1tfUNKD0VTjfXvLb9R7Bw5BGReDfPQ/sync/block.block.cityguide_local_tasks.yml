@@ -1,0 +1,22 @@
+uuid: a3f8c89f-0a39-497d-8fa1-42aea7aa9506
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cityguide
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: cityguide_local_tasks
+theme: cityguide
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

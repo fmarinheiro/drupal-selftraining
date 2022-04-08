@@ -1,0 +1,33 @@
+uuid: d0deb779-c3c2-4a4b-8726-86542761c306
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hotel_slides
+  module:
+    - ctools
+    - views
+  theme:
+    - mayo
+id: mayo_views_block__hotel_slides_block_1
+theme: mayo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:hotel_slides-block_1'
+settings:
+  id: 'views_block:hotel_slides-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      hotels: hotels
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

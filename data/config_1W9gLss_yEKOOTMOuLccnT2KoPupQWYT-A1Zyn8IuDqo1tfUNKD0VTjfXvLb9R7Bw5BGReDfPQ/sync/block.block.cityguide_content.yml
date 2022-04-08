@@ -1,0 +1,22 @@
+uuid: 58081a86-9d1c-45e3-8d87-e6c2f02593f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cityguide
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: cityguide_content
+theme: cityguide
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

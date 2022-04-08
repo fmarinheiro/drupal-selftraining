@@ -1,0 +1,84 @@
+uuid: 9a146bdc-7326-48af-9a62-11e66951bc33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.landmarks.field_landmark_picture
+    - field.field.taxonomy_term.landmarks.field_landmark_web
+    - image.style.taxonomy
+    - taxonomy.vocabulary.landmarks
+  module:
+    - ds
+    - image
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - taxonomy_term_title
+        - field_landmark_picture
+      right:
+        - field_landmark_web
+        - description
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h2
+          class: ''
+id: taxonomy_term.landmarks.default
+targetEntityType: taxonomy_term
+bundle: landmarks
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 3
+    region: right
+    settings: {  }
+    third_party_settings: {  }
+  field_landmark_picture:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: taxonomy
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_landmark_web:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: right
+hidden: {  }

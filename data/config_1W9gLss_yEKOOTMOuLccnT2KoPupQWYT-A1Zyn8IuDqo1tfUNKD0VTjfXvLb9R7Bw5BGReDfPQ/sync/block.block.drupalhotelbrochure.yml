@@ -1,0 +1,31 @@
+uuid: 84eb9255-2044-4f12-b6c0-7c0891181c6c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:brochure:178fa245-024a-4207-8e72-cd55d9c1eec0'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: drupalhotelbrochure
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'block_content:178fa245-024a-4207-8e72-cd55d9c1eec0'
+settings:
+  id: 'block_content:178fa245-024a-4207-8e72-cd55d9c1eec0'
+  label: 'Drupal Hotel Brochure'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/102
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,111 @@
+uuid: 0dd6b511-9400-42ef-ae54-9ac47686e705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotels.body
+    - field.field.node.hotels.field_hotel_phone
+    - field.field.node.hotels.field_hotel_picture
+    - field.field.node.hotels.field_hotel_video
+    - field.field.node.hotels.field_hotel_website
+    - field.field.node.hotels.field_landmarks
+    - field.field.node.hotels.field_map_to_hotel
+    - field.field.node.hotels.field_slides
+    - image.style.medium
+    - node.type.hotels
+  module:
+    - image
+    - link
+    - simple_gmap
+    - telephone
+    - text
+    - user
+    - video_embed_field
+id: node.hotels.default
+targetEntityType: node
+bundle: hotels
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hotel_phone:
+    weight: 3
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_hotel_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_hotel_video:
+    weight: 6
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_hotel_website:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_landmarks:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_map_to_hotel:
+    weight: 4
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: '300'
+      iframe_height: '300'
+      iframe_title: ''
+      static_scale: 1
+      include_link: true
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_slides: true
